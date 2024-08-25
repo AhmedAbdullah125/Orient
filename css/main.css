@@ -1287,6 +1287,7 @@ header {
 .partner {
   direction: rtl;
   background-color: #F7F7F7;
+  overflow: hidden;
 }
 
 .swiperPartner {
@@ -1343,7 +1344,7 @@ header {
     padding: 0 50px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .services-cont {
     grid-template-columns: 1fr;
   }
