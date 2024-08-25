@@ -1,0 +1,24 @@
+//  colors
+
+:root {
+  --main-color: #f5951c;
+  --main-hover: #0361B5;;
+  --sec-color: #717171;
+  --black-color: #000;
+  --white-color: #fff;
+
+  --border-radius: 24px;
+  font-size: 16px;
+}
+
+$main: var(--main-color);
+$hover: var(--main-hover);
+$sec: var(--sec-color);
+$text: var(--text-color);
+$black: var(--black-color);
+$white: var(--white-color);
+
+$back: var(--back-color);
+$border: var(--border-color);
+
+$radius: var(--border-radius);

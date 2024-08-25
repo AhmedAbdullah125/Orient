@@ -1,0 +1,100 @@
+.services {
+    padding: 110px 0;
+}
+
+.services h2 {
+    text-align: center;
+    color: #181E4B;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.services-cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+@media (max-width: 1200px) {
+    .services-cont {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 50px;
+    }
+}
+@media (max-width: 550px) {
+    .services-cont {
+        grid-template-columns: 1fr;
+    }
+}
+
+.service {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    background-color: $white;
+    border-radius: 25px;
+}
+.service:hover{
+    box-shadow: 0 0 20px #ccc;
+}
+
+.service .squre {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: $main;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    
+}
+.service:hover .squre{
+    opacity: 1;
+}
+.service .img-cont {
+    width: 75px;
+    height: 75px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.service .img-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.service h3 {
+    font-size: 20px;
+    color: #1E1D4C;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.service p {
+    font-size: 16px;
+    color: #5E6282;
+    font-weight: 400;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: center;
+}
