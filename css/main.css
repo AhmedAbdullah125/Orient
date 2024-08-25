@@ -1288,10 +1288,11 @@ header {
   direction: rtl;
   background-color: #F7F7F7;
   overflow: hidden;
+  position: relative;
 }
 
 .swiperPartner {
-  height: 30Vh;
+  height: 30vh;
 }
 
 .swiperPartner .swiper-slide {
