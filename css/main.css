@@ -2004,6 +2004,7 @@ span {
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
 
 .offers-img-cont img {
@@ -2011,6 +2012,16 @@ span {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.offers-img-cont .over {
+  position: absolute;
+  top: 15px;
+  inset-inline-end: 15px;
+  background-color: #FF7255;
+  padding: 6px 20px;
+  border-radius: 17px;
+  color: #fff;
 }
 
 .offersSwiper {
