@@ -1,0 +1,122 @@
+.offers {
+    position: relative;
+    padding: 170px 0;
+    background-color: #fafafa;
+}
+
+.offers .texxt {
+    width: 50%;
+    position: relative;
+z-index: 5;
+}
+
+.offers-img-cont {
+    width: 230px;
+    height: 230px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.offers-img-cont img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.offersSwiper {
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+    width: 85%;
+    z-index: 5;
+}
+.rounded-cont{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.offers p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 30px;
+}
+
+.offers .upper-roundded {
+    padding: 18px 0 0 16px;
+    border-inline-end:none;
+    border-inline-start:1px solid $main;
+
+    position: absolute;
+    max-width: 500px;
+    height: 65%;
+    bottom: 170px;
+    inset-inline-end: 150px;
+    z-index: 1;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width: 1200px) {
+    .offers .upper-roundded {
+        inset-inline-end: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .offers .upper-roundded {
+        inset-inline-end: 50%;
+        transform: translateX(50%);
+    }
+    .rounded-cont .over{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #fff, $alpha: .7);
+        z-index: 2;
+    }
+    .offers .texxt h3 {
+        font-size: 32px;
+    }
+    .offersSwiper {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .offers .texxt {
+        width: 100%;
+    }
+
+    .offers .texxt h3 {
+        font-size: 22px;
+    }
+
+    .offersSwiper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .offers-img-cont {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+    .offers-img-cont {
+        width: 155px;
+        height: 155px;
+    }
+}

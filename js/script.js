@@ -88,7 +88,40 @@ const swiper3 = new Swiper('.swiperAdvantages', {
     pauseOnMouseEnter: true,
   },
 });
-
+const swiper4 = new Swiper('.offersSwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 20,
+  slidesPerView: 4,
+  breakpoints: {
+    // when window width is >= 320px
+    100: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    540: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 640px
+    767: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  autoplay: {
+      delay: 7000,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
 
 $(document).ready(function () {
   //phone size menu onclick
