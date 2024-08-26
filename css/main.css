@@ -1353,6 +1353,12 @@ header {
 @media (max-width: 767px) {
   .services-cont {
     grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 400px) {
+  .services-cont {
+    padding: 0 0px;
   }
 }
 .service {
@@ -1714,10 +1720,6 @@ header {
   color: var(--white-color);
 }
 
-.swiperAdvantages .advantage .text {
-  width: 100%;
-}
-
 .advantages-cont .swiper-wrapper .swiper-slide:nth-child(1) .icon {
   background-color: #181E4B;
 }
@@ -1906,5 +1908,77 @@ span {
   }
   .advantages-cont .r-side .trip-card .palnee img {
     transform: rotate(284deg);
+  }
+}
+.fasel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fasel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fasel .over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fasel .over .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.fasel .over .container p {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.fasel .over .p-cont {
+  position: relative;
+  max-width: 550px;
+}
+
+.fasel .over .p-cont img {
+  position: absolute;
+  max-width: 312px;
+  max-height: 41px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  bottom: -22px;
+  inset-inline-end: 30px;
+  transform: rotate(5deg);
+}
+
+@media (max-width: 991px) {
+  .fasel .over .container p {
+    font-size: 32px;
+  }
+  .fasel .over .p-cont {
+    max-width: 420px;
+  }
+}
+@media (max-width: 450px) {
+  .fasel .over .container p {
+    font-size: 22px;
+  }
+  .fasel .over .p-cont {
+    max-width: 80%;
+  }
+  .fasel .over .p-cont img {
+    max-width: 156px;
+    max-height: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

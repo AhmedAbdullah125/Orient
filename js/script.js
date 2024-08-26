@@ -84,7 +84,7 @@ const swiper3 = new Swiper('.swiperAdvantages', {
   loop: true,
   slidesPerView: 3,
   autoplay: {
-    delay: 1000,
+    delay: 20000,
     pauseOnMouseEnter: true,
   },
 });

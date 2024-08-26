@@ -27,6 +27,14 @@
 @media (max-width: 767px) {
     .services-cont {
         grid-template-columns: 1fr;
+        padding: 0 40px;
+
+    }
+}
+@media (max-width: 400px) {
+    .services-cont {
+        padding: 0 0px;
+
     }
 }
 
