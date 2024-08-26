@@ -1840,4 +1840,71 @@ span {
   font-size: 16px;
   font-weight: 400;
   color: #84829A;
+}
+
+@media (max-width: 1200px) {
+  .advantages-cont {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages-cont .l-side {
+    order: 2;
+  }
+  .advantages-cont .l-side h3 {
+    font-size: 32px;
+  }
+  .advantages-cont .r-side {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .advantages-cont .l-side {
+    align-items: center;
+  }
+}
+@media (max-width: 991px) {
+  .palnee {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    inset-inline-end: -100px;
+  }
+  .advantages-cont .r-side .trip-card .palnee img {
+    transform: rotate(300deg);
+  }
+  .advantages-cont .r-side .trip-card:hover .palnee {
+    transform: translate(50px, -50px);
+  }
+}
+@media (max-width: 767px) {
+  .advantages-cont {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .advantages-cont .l-side h3 {
+    font-size: 20px;
+  }
+  .advantages-cont .r-side {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .advantages-cont .l-side {
+    align-items: flex-start;
+  }
+  .advantages-cont .r-side .trip-card:hover .palnee {
+    transform: translate(50px, -50px);
+  }
+  .advantages-cont .r-side .trip-card .palnee img {
+    transform: rotate(300deg);
+  }
+  .advantages-cont .r-side .trip-card .palnee img {
+    transform: rotate(284deg);
+  }
 }/*# sourceMappingURL=main.css.map */
