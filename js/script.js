@@ -78,6 +78,17 @@ const swiper2 = new Swiper('.swiperPartner', {
     el: '.swiper-scrollbar',
   },
 });
+const swiper3 = new Swiper('.swiperAdvantages', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+  slidesPerView: 3,
+  autoplay: {
+    delay: 1000,
+    pauseOnMouseEnter: true,
+  },
+});
+
 
 $(document).ready(function () {
   //phone size menu onclick
@@ -126,25 +137,3 @@ $(document).ready(function () {
     $select2.select2();
   }
 });
-//form wizard
-function activeStep(ele, stepId) {
-  var nextStep = "#step_" + stepId;
-  $(".step").not(nextStep).hide();
-  $(nextStep).show();
-  if ($(ele).hasClass("btn-irv-default")) {
-    var activeHead = stepId;
-    var activeStep = "#activeStep-" + activeHead;
-    $(activeStep).removeClass("active");
-  } else if (stepId == 3) {
-    var activeHead = stepId - 1;
-    var lastHead = stepId;
-    var activeStep = "#activeStep-" + activeHead;
-    var activelast = "#activeStep-" + lastHead;
-    $(activeStep).addClass("active");
-    $(activelast).addClass("active");
-  } else {
-    var activeHead = stepId;
-    var activeStep = "#activeStep-" + activeHead;
-    $(activeStep).addClass("active");
-  }
-}
