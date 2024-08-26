@@ -24,6 +24,7 @@ h2 {
     color: #DF6951;
     font-weight: 600;
 }
+
 h3 {
     color: #181E4B;
     font-size: 50px;
@@ -273,6 +274,8 @@ span {
     height: 400px;
     overflow: hidden;
     position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .fasel img {
