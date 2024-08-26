@@ -1210,7 +1210,7 @@ header {
 }
 .swiper {
   width: 100%;
-  height: 80vh;
+  height: 78vh;
 }
 
 @media (max-width: 991px) {
@@ -1325,7 +1325,7 @@ header {
 }
 
 .services {
-  padding: 110px 0;
+  padding: 110px 0 0;
 }
 
 .services h2 {
@@ -1426,4 +1426,232 @@ header {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: center;
+}
+
+.about {
+  padding: 60px;
+  overflow: hidden;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.about-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+.about .l-side {
+  width: 100%;
+  padding-inline-start: 60px;
+}
+
+.about .r-side {
+  width: 100%;
+}
+
+.about .l-side .img-cont {
+  padding: 18px 16px 0 0;
+  border-radius: 50% 50% 0 0;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid var(--main-color);
+  border-inline-end: 1px solid var(--main-color);
+}
+
+.about .l-side .img-cont img {
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+}
+
+.about .l-side .img-cont .img-abs {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border: 3px solid var(--white-color);
+}
+.about .l-side .img-cont .img-abs img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .l-side .img-cont .img-abs:hover {
+  animation: upDown infinite 3s linear;
+}
+
+.about .l-side .img-cont .img-abs1 {
+  width: 180px;
+  height: 180px;
+  top: -50px;
+  inset-inline-start: -30px;
+}
+
+.about .l-side .img-cont .img-abs2 {
+  width: 120px;
+  height: 120px;
+  top: 40%;
+  inset-inline-start: -50px;
+}
+
+.about .l-side .img-cont .dots {
+  width: 153px;
+  height: 166px;
+  bottom: -50px;
+  inset-inline-end: -50px;
+  border-radius: 0;
+  z-index: -1;
+}
+.about .l-side .img-cont .dots img {
+  border-radius: 0;
+}
+
+.about .l-side .img-cont .img-abs3 {
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  inset-inline-start: -54px;
+}
+
+.about .r-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about .r-side h2 {
+  font-size: 18px;
+  color: #DF6951;
+  font-weight: 600;
+}
+
+.about .r-side h3 {
+  color: #181E4B;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about .r-side p {
+  color: var(--back-color);
+  font-size: 16px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1200px) {
+  .about .l-side .img-cont .img-abs1 {
+    width: 120px;
+    height: 120px;
+  }
+  .about .l-side .img-cont .img-abs2 {
+    width: 80px;
+    height: 80px;
+    top: 35%;
+  }
+  .about .l-side .img-cont .img-abs3 {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .about {
+    padding: 30px;
+  }
+  .about-cont {
+    grid-template-columns: 1fr;
+  }
+  .about .l-side .img-cont .img-abs1 {
+    width: 180px;
+    height: 180px;
+  }
+  .about .l-side .img-cont .img-abs2 {
+    width: 120px;
+    height: 120px;
+    top: 40%;
+  }
+  .about .l-side .img-cont .img-abs3 {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .services h2 {
+    font-size: 45px;
+  }
+  .about .r-side h3 {
+    font-size: 40px;
+  }
+  .about .l-side {
+    padding-inline-start: 0;
+  }
+  .about .l-side .img-cont .img-abs1 {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    inset-inline-start: 20px;
+  }
+  .about .l-side .img-cont .img-abs2 {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    inset-inline-start: -20px;
+  }
+  .about .l-side .img-cont .img-abs3 {
+    width: 40px;
+    height: 40px;
+    inset-inline-start: -20px;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    padding: 10px;
+  }
+  .about .l-side .img-cont .img-abs1 {
+    inset-inline-start: 0px;
+  }
+  .about .l-side .img-cont .dots {
+    width: 77px;
+    height: 83px;
+    bottom: -40px;
+    inset-inline-end: -30px;
+  }
+}
+.about .r-side a {
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  color: var(--white-color);
 }/*# sourceMappingURL=main.css.map */
