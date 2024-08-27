@@ -115,13 +115,50 @@ const swiper4 = new Swiper('.offersSwiper', {
     }
   },
   autoplay: {
-      delay: 7000,
-      pauseOnMouseEnter: true,
+    delay: 7000,
+    pauseOnMouseEnter: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
+
+
+const swiper5 = new Swiper('.hotelsSwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    100: {
+      slidesPerView: 1,
     },
-    pagination: {
-      el: '.swiper-pagination',
+    // when window width is >= 480px
+    767: {
+      slidesPerView: 2,
+      navigation:false,
     },
-  });
+
+    991: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+});
+
 
 $(document).ready(function () {
   //phone size menu onclick

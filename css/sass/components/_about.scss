@@ -254,3 +254,8 @@
     color: $white;
     margin-bottom: 32px;
 }
+.a-btn:hover {
+    background-color: transparent;
+    border: 1px solid $main;
+    color: $main;
+}
