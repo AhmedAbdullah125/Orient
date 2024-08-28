@@ -120,6 +120,9 @@
 .portrait-card2{
     transform: rotate(-13deg) translateX(-10px);
 }
+.portrait-card2:hover{
+    opacity: .1;
+}
 @media (max-width: 1200px) {
     .testimonials-cont{
         padding: 120px 0px 30px ;
