@@ -2472,6 +2472,9 @@ span {
   }
 }
 @media (max-width: 767px) {
+  .hotelsSwiper .hotel-card .img-cont {
+    height: 250px;
+  }
   .hotelsSwiper .hotel-card {
     max-width: calc(100% - 100px);
   }
@@ -2519,6 +2522,20 @@ span {
   max-height: 200px;
 }
 
+@keyframes talking {
+  0% {
+    box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+  }
+  10% {
+    box-shadow: 20px 0px 100px rgba(89, 177, 255, 0.6);
+  }
+  65% {
+    box-shadow: 20px 0px 100px rgba(89, 177, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+  }
+}
 .testimonial {
   position: relative;
   margin: 100px auto;
@@ -2529,7 +2546,7 @@ span {
   flex-direction: column;
   max-width: 530px;
   background-color: var(--white-color);
-  box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+  animation: talking 1s linear infinite;
 }
 
 .vector {

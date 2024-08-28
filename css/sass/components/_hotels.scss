@@ -191,6 +191,9 @@
 }
 
 @media (max-width: 767px) {
+    .hotelsSwiper .hotel-card .img-cont{
+        height: 250px;
+    }
     .hotelsSwiper .hotel-card {
         max-width: calc(100% - 100px);
     }
