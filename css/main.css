@@ -2524,16 +2524,16 @@ span {
 
 @keyframes talking {
   0% {
-    box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+    box-shadow: 0px 0px 70px rgba(89, 177, 230, 0.6);
   }
   10% {
-    box-shadow: 20px 0px 100px rgba(89, 177, 255, 0.6);
+    box-shadow: 20px 0px 150px rgba(89, 177, 230, 0.7);
   }
   65% {
-    box-shadow: 20px 0px 100px rgba(89, 177, 255, 0.6);
+    box-shadow: 20px 0px 250px rgba(89, 177, 230, 0.7);
   }
   100% {
-    box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+    box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.6);
   }
 }
 .testimonial {
@@ -2546,7 +2546,7 @@ span {
   flex-direction: column;
   max-width: 530px;
   background-color: var(--white-color);
-  animation: talking 1s linear infinite;
+  animation: talking 1.5s ease infinite;
 }
 
 .vector {
@@ -2627,11 +2627,11 @@ span {
 
 @media (max-width: 1200px) {
   .testimonials-cont {
-    padding: 120px 30px 30px;
+    padding: 120px 0px 30px;
   }
 }
 @media (max-width: 440px) {
   .testimonial {
-    padding: 95px 20px 30px;
+    padding: 95px 10px 30px;
   }
 }/*# sourceMappingURL=main.css.map */
