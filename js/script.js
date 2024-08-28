@@ -159,6 +159,40 @@ const swiper5 = new Swiper('.hotelsSwiper', {
   
 });
 
+const swiper6 = new Swiper('.testimonialsSwiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    100: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    767: {
+      slidesPerView: 1,
+      navigation:false,
+    },
+
+    991: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 1,
+    }
+  },
+  
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+});
+
 
 $(document).ready(function () {
   //phone size menu onclick

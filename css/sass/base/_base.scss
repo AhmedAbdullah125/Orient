@@ -13,6 +13,15 @@ body {
   padding: 0;
   transition: all .4s ease-in-out;
 }
+::-moz-selection { /* Code for Firefox */
+  color: $white;
+  background: $main;
+}
+
+::selection {
+  color: $white;
+  background: $main;
+}
 
 figure {
   margin: 0;

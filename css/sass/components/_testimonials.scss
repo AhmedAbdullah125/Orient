@@ -1,0 +1,119 @@
+.testimonials{
+    overflow: hidden;
+}
+.testimonials-cont{
+    padding: 50px 0;
+    background-color: #eee;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+.testimonials .swiper-wrapper{
+    // overflow: hidden;
+}
+.testimonials h3 ,.testimonials h2{
+    position: relative;
+    z-index: 5;
+}
+.testimonialsSwiper{
+    position: relative;
+}
+.testimonials .hat{
+    position: absolute;
+    bottom: 0;
+    inset-inline-start: 0;
+    max-height: 200px;
+}
+.testimonial{
+    position: relative;
+    margin: 100px auto;
+    padding: 95px 70px 33px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 530px;
+    background-color: $white;
+    box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+}
+.vector{
+    position: absolute;
+    top: 20px;
+    inset-inline-start: 20px;
+}
+.testimonial .person{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 5px solid $white;
+    object-fit: cover;
+    margin: -153px 0 50px;
+}
+.testimonial p{
+    height: 90px;
+    font-size: 12px;
+    font-weight: 300;
+    color: $black;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.testimonial h6{
+    font-size: 12px;
+    font-weight: 700;
+    color: $black;
+    text-align: center;
+}
+.testimonialsSwiper .swiper-slide {
+    opacity: 0;
+    transition: all .3s ease;
+}
+.testimonialsSwiper .swiper-slide-active {
+    opacity: 1;
+    transition: all .9s ease;
+
+}
+.testimonials .swiper-button-next,.testimonials .swiper-button-prev{
+    background-color: transparent;
+    color: $hover;
+}
+.portrait-card{
+    position: absolute;
+    top: -65px;
+    inset-inline-end: 050px;
+    padding: 5px 5px 30px;
+    width: 150px;
+    height: 175px;
+    background-color: $white;
+    box-shadow: 0 0 5px #aaa;
+    border-radius: 3px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    transform: rotate(4deg) translateX(40px);
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.portrait-card2{
+    transform: rotate(-13deg) translateX(-10px);
+}
+@media (max-width: 1200px) {
+    .testimonials-cont{
+        padding: 120px 30px 30px ;
+    }
+}
+@media (max-width: 440px) {
+    .testimonial{
+        padding: 95px 20px 30px;
+    }
+}
+@media (max-width: 767px) {
+    // .testimonials-cont{
+    //     padding: 1250px 0;
+    // }
+}

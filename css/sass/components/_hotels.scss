@@ -5,7 +5,7 @@
 }
 
 
-.hotel-booking .heading {
+.hotel-booking .heading ,.testimonials .heading{
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,9 @@
 }
 
 .hotel-booking h2,
-.hotel-booking h3 {
+.hotel-booking h3 
+.testimonials h2,
+.testimonials h3{
     text-align: center;
 }
 
@@ -192,19 +194,15 @@
     .hotelsSwiper .hotel-card {
         max-width: calc(100% - 100px);
     }
-    .hotel-booking h3 {
+    h3 {
         font-size: 22px;
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-        // display: none;
     }
 }
 @media (max-width: 440px) {
     .hotelsSwiper .hotel-card {
         max-width: calc(100% - 20px);
     }
-    .hotel-booking h3 {
+     h3 {
         font-size: 22px;
     }
     .swiper-button-next,

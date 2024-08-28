@@ -26,6 +26,16 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--white-color);
+  background: var(--main-color);
+}
+
+::selection {
+  color: var(--white-color);
+  background: var(--main-color);
+}
+
 figure {
   margin: 0;
 }
@@ -2289,7 +2299,7 @@ span {
   position: relative;
 }
 
-.hotel-booking .heading {
+.hotel-booking .heading, .testimonials .heading {
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -2299,7 +2309,8 @@ span {
 }
 
 .hotel-booking h2,
-.hotel-booking h3 {
+.hotel-booking h3 .testimonials h2,
+.testimonials h3 {
   text-align: center;
 }
 
@@ -2464,7 +2475,7 @@ span {
   .hotelsSwiper .hotel-card {
     max-width: calc(100% - 100px);
   }
-  .hotel-booking h3 {
+  h3 {
     font-size: 22px;
   }
 }
@@ -2472,11 +2483,138 @@ span {
   .hotelsSwiper .hotel-card {
     max-width: calc(100% - 20px);
   }
-  .hotel-booking h3 {
+  h3 {
     font-size: 22px;
   }
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
+  }
+}
+.testimonials {
+  overflow: hidden;
+}
+
+.testimonials-cont {
+  padding: 50px 0;
+  background-color: #eee;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.testimonials h3, .testimonials h2 {
+  position: relative;
+  z-index: 5;
+}
+
+.testimonialsSwiper {
+  position: relative;
+}
+
+.testimonials .hat {
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  max-height: 200px;
+}
+
+.testimonial {
+  position: relative;
+  margin: 100px auto;
+  padding: 95px 70px 33px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 530px;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 100px rgba(89, 177, 230, 0.5);
+}
+
+.vector {
+  position: absolute;
+  top: 20px;
+  inset-inline-start: 20px;
+}
+
+.testimonial .person {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 5px solid var(--white-color);
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: -153px 0 50px;
+}
+
+.testimonial p {
+  height: 90px;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black-color);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.testimonial h6 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--black-color);
+  text-align: center;
+}
+
+.testimonialsSwiper .swiper-slide {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.testimonialsSwiper .swiper-slide-active {
+  opacity: 1;
+  transition: all 0.9s ease;
+}
+
+.testimonials .swiper-button-next, .testimonials .swiper-button-prev {
+  background-color: transparent;
+  color: var(--main-hover);
+}
+
+.portrait-card {
+  position: absolute;
+  top: -65px;
+  inset-inline-end: 50px;
+  padding: 5px 5px 30px;
+  width: 150px;
+  height: 175px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 5px #aaa;
+  border-radius: 3px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  transform: rotate(4deg) translateX(40px);
+}
+.portrait-card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portrait-card2 {
+  transform: rotate(-13deg) translateX(-10px);
+}
+
+@media (max-width: 1200px) {
+  .testimonials-cont {
+    padding: 120px 30px 30px;
+  }
+}
+@media (max-width: 440px) {
+  .testimonial {
+    padding: 95px 20px 30px;
   }
 }/*# sourceMappingURL=main.css.map */
