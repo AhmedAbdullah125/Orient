@@ -2654,6 +2654,8 @@ span {
   gap: 50px;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #E5E5EA;
+  margin-bottom: 50px;
 }
 
 .r-side h2 {
@@ -2714,4 +2716,13 @@ span {
   .contact .l-side {
     order: 2;
   }
+}
+.copyright {
+  margin-bottom: 50px;
+}
+.copyright p {
+  text-align: center;
+  color: #181433;
+  font-size: 12px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
