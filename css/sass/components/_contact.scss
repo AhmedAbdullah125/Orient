@@ -1,0 +1,50 @@
+.contact{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 60px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.r-side h2{
+    margin-bottom: 24px;
+}
+.r-side .input-cont{
+    display: flex;
+    background-color: #eee;
+    height: 52px;
+    border-radius: 5px 10px 10px 5px;
+    padding-inline-start: 15px;
+    margin-bottom: 20px;
+}
+.r-side .input-cont .a-btn{
+margin-bottom: 0;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.r-side .input-cont input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 52px;
+    width: 100%;
+}
+.r-side p{
+    color: #181433;
+    font-size: 16px;
+    font-weight: 200    ;
+}
+.contact .l-side{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+.contact .l-side iframe{
+    max-height: 400px;
+    width: 90%;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #aaa;
+}
