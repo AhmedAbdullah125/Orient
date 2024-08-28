@@ -48,3 +48,16 @@ justify-content: center;
     border-radius: 25px;
     box-shadow: 0 0 10px #aaa;
 }
+@media (max-width: 991px) {
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact .r-side{
+        order: 1;
+
+    }
+    .contact .l-side{
+        order: 2;
+        
+    }
+}
