@@ -2706,7 +2706,22 @@ span {
   box-shadow: 0 0 10px #aaa;
 }
 
+::-moz-placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #181433;
+}
+
+::placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #181433;
+}
+
 @media (max-width: 991px) {
+  .contact .l-side iframe {
+    width: 100%;
+  }
   .contact {
     grid-template-columns: 1fr;
   }
