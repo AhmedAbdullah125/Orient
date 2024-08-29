@@ -20,6 +20,13 @@
   <link rel="stylesheet" href="css/select2.min.css" />
   <link rel="stylesheet" href="css/flatpickr.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/css/intlTelInput.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
@@ -158,12 +165,12 @@
         </div>
         <h3>From our gallery</h3>
         <div class="imgs-cont">
-          <div class="img-cont"><img src="images/Mazar/1.jpg" alt="Saudi-Arabia"></div>
-          <div class="img-cont"><img src="images/Mazar/2.jpg" alt="Saudi-Arabia"></div>
-          <div class="img-cont"><img src="images/Mazar/3.jpg" alt="Saudi-Arabia"></div>
-          <div class="img-cont"><img src="images/Mazar/4.webp" alt="Saudi-Arabia"></div>
-          <div class="img-cont"><img src="images/Mazar/5.webp" alt="Saudi-Arabia"></div>
-          <div class="img-cont"><img src="images/Mazar/6.jpg" alt="Saudi-Arabia"></div>
+          <a data-fancybox="gallery" href="images/Mazar/1.jpg" class="img-cont" ><img src="images/Mazar/1.jpg" alt="Saudi-Arabia"    data-caption="Caption #1"></a>
+          <a data-fancybox="gallery" href="images/Mazar/2.jpg" class="img-cont"><img src="images/Mazar/2.jpg" alt="Saudi-Arabia"      data-caption="Caption #2"></a>
+          <a data-fancybox="gallery" href="images/Mazar/3.jpg" class="img-cont"><img src="images/Mazar/3.jpg" alt="Saudi-Arabia"     data-caption="Caption #3"></a>
+          <a data-fancybox="gallery" href="images/Mazar/4.webp" class="img-cont"><img src="images/Mazar/4.webp" alt="Saudi-Arabia"  data-caption="Caption #4"></a>
+          <a data-fancybox="gallery" href="images/Mazar/5.webp" class="img-cont"><img src="images/Mazar/5.webp" alt="Saudi-Arabia"  data-caption="Caption #5"></a>
+          <a data-fancybox="gallery" href="images/Mazar/6.jpg" class="img-cont"><img src="images/Mazar/6.jpg" alt="Saudi-Arabia"     data-caption="Caption #6"></a>
         </div>
       </div>
       <div class="r-side">
@@ -190,7 +197,6 @@
       </div>
 
     </div>
-
   </div>
   <div class="contact-cont" id="contact">
     <div class="container">
@@ -222,6 +228,10 @@
   <script src="js/select2.min.js"></script>
   <script src="js/flatpickr.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.5.0/build/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const input = document.querySelector("#phone");

@@ -2967,7 +2967,7 @@ span {
 
 .plan-main .r-side .form-cont input,
 textarea {
-  width: 100%;
+  width: 100% !important;
   height: 75px;
   border: none;
   outline: none;
@@ -2996,6 +2996,14 @@ textarea {
 
 .plan-main .iti--allow-dropdown {
   margin-bottom: 9px;
+}
+
+.plan-main .iti__tel-input {
+  width: 100%;
+}
+
+#iti-0__dropdown-content {
+  inset-inline-start: 0;
 }
 
 .plan-main .iti__country-container {
@@ -3046,6 +3054,9 @@ textarea {
 @media (max-width: 991px) {
   .plan-details .more-one {
     grid-template-columns: 1fr;
+  }
+  .plan-details h5 {
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
