@@ -184,7 +184,7 @@
 
 .plan-main .r-side .form-cont input,
 textarea {
-    width: 100% !important;
+    width: 100%;
     height: 75px;
     border: none;
     outline: none;
@@ -200,6 +200,9 @@ textarea {
 
 .plan-main textarea {
     margin-bottom: 20px;
+}
+.flatpickr-input{
+    width: 100% !important;
 }
 
 .plan-main .a-btn {
