@@ -1736,6 +1736,7 @@ header {
   border-radius: 8px;
   color: var(--white-color);
   margin-bottom: 32px;
+  border: 1px solid var(--main-color);
 }
 
 .a-btn:hover {
