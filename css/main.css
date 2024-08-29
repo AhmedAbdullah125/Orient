@@ -1390,6 +1390,10 @@ header {
   max-height: 100%;
 }
 
+.swiper-pagination {
+  z-index: 5;
+}
+
 .single-page {
   position: relative;
 }
