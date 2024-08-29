@@ -71,23 +71,19 @@
     font-size: 50px;
   }
 }
-@media (max-width: 440px) {
-  .banner .p-on-overlay {
-    font-size: 30px;
-  }
-}
+
 
 @media (max-width: 991px) {
   .p-on-overlay {
     font-size: 40px;
   }
 }
-
-@media (max-width: 480px) {
-  .p-on-overlay {
+@media (max-width: 440px) {
+  .banner .p-on-overlay {
     font-size: 30px;
   }
 }
+
 
 .swiper-pagination-bullet {
   width: 32px;
@@ -164,6 +160,7 @@
   background-color: #F7F7F7;
   overflow: hidden;
   position: relative;
+  padding: 30px 0;
 }
 
 .swiperPartner {

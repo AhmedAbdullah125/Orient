@@ -100,7 +100,7 @@
     color: $main;
     font-size: 20px;
     font-weight: 500;
-
+    margin: 0;
 }
 
 .plan-details span {
@@ -264,8 +264,6 @@ textarea {
 }
 
 @media (max-width: 991px) {
-
-   
     .plan-details .more-one {
         grid-template-columns: 1fr;
     }
@@ -298,7 +296,7 @@ textarea {
         grid-template-columns: 1fr 1fr;
     }
     .plan-main{
-        padding: 10px;
+        padding: 20px;
     }
 }
 @media (max-width: 500px) {
