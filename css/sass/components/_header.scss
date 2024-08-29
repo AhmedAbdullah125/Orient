@@ -405,3 +405,15 @@ header {
     padding-bottom: 4px;
   }
 }
+.langs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px !important;
+  background-color: $main;
+  border-radius: 5px;
+  span, i{
+    color: $white;
+  }
+}

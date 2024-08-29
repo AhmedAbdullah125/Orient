@@ -1218,6 +1218,19 @@ header {
     padding-bottom: 4px;
   }
 }
+.langs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px !important;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.langs span, .langs i {
+  color: var(--white-color);
+}
+
 .swiper {
   width: 100%;
   height: 78vh;
