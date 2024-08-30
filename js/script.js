@@ -80,13 +80,20 @@ const swiper2 = new Swiper('.swiperPartner', {
 });
 const swiper3 = new Swiper('.swiperAdvantages', {
   // Optional parameters
+  speed: 12000,
   direction: 'vertical',
   loop: true,
   slidesPerView: 3,
   autoplay: {
-    delay: 2000,
-    pauseOnMouseEnter: true,
+    delay: 0,
+    disableOnInteraction: false,
   },
+  loop: true,
+  freeMode: true,
+  mousewheel: 
+		{
+			invert: true,
+		},
 });
 const swiper4 = new Swiper('.offersSwiper', {
   // Optional parameters
@@ -142,7 +149,7 @@ const swiper5 = new Swiper('.hotelsSwiper', {
     // when window width is >= 480px
     767: {
       slidesPerView: 2,
-      navigation:false,
+      navigation: false,
     },
 
     991: {
@@ -152,11 +159,11 @@ const swiper5 = new Swiper('.hotelsSwiper', {
       slidesPerView: 3,
     }
   },
-  
+
   pagination: {
     el: '.swiper-pagination',
   },
-  
+
 });
 
 const swiper6 = new Swiper('.testimonialsSwiper', {
@@ -176,7 +183,7 @@ const swiper6 = new Swiper('.testimonialsSwiper', {
     // when window width is >= 480px
     767: {
       slidesPerView: 1,
-      navigation:false,
+      navigation: false,
     },
 
     991: {
@@ -186,18 +193,18 @@ const swiper6 = new Swiper('.testimonialsSwiper', {
       slidesPerView: 1,
     }
   },
-  
+
   pagination: {
     el: '.swiper-pagination',
   },
-  
+
 });
-$('#iconified').on('keyup', function() {
+$('#iconified').on('keyup', function () {
   var input = $(this);
-  if(input.val().length === 0) {
-      input.addClass('empty');
+  if (input.val().length === 0) {
+    input.addClass('empty');
   } else {
-      input.removeClass('empty');
+    input.removeClass('empty');
   }
 });
 

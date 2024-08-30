@@ -1,0 +1,37 @@
+.all-offers header{
+position: relative;
+background-color: $hover;
+}
+.all-offers .nav-header{
+    padding: 20px 0 ;
+}
+.all-cards .hotel-card .details .counrty{
+    margin-bottom: 30px;
+}
+.all-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px 0;
+    gap: 50px 0;
+}
+.all-cards .title-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.view-all{
+    display: inline-block;
+    margin: 30px 0;
+}
+@media (max-width: 1200px) {
+    .all-cards{
+    grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media (max-width: 767px) {
+    .all-cards{
+    grid-template-columns: 1fr;
+
+    }
+}
