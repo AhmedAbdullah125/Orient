@@ -2460,19 +2460,20 @@ span {
   font-size: 18px;
 }
 
-.new-price {
-  color: #DF6951;
-  font-size: 30px;
-  font-weight: 400;
-}
-
 .hotel-card .details .price {
   display: flex;
   align-items: flex-end;
   gap: 20px;
   margin-bottom: 10px;
 }
-.hotel-card .details .price .old-price {
+
+.new-price {
+  color: #DF6951;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.old-price {
   color: #7D7D7D;
   font-size: 22px;
   font-weight: 400;
@@ -3186,5 +3187,11 @@ textarea {
 @media (max-width: 767px) {
   .all-cards {
     grid-template-columns: 1fr;
+  }
+  .new-price {
+    font-size: 20px;
+  }
+  .old-price {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
