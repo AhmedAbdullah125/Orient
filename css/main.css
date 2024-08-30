@@ -1226,6 +1226,7 @@ header {
   padding: 10px !important;
   background-color: var(--main-color);
   border-radius: 5px;
+  cursor: pointer;
 }
 .langs span, .langs i {
   color: var(--white-color);
