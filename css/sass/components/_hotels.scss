@@ -23,7 +23,7 @@
 }
 
 .hotel-booking h3 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
 
 }
@@ -228,5 +228,12 @@
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
+    }
+}
+@media (max-width: 767px) {
+    .hotel-booking{
+        .swiper-button-next ,.swiper-button-prev{
+            display: none;
+        }
     }
 }

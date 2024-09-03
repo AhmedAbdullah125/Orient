@@ -208,6 +208,40 @@ $('#iconified').on('keyup', function () {
   }
 });
 
+//fixed nav3
+$stickyNav = $(".top-header");
+$initNav = $(".nav-header");
+$(window).on("scroll load", function () {
+  var scroll = $(window).scrollTop();
+  if (scroll >= 200) {
+    $stickyNav.addClass("fixed-nav", 500);
+    $initNav.addClass("smaller-nav");
+  } else {
+    $stickyNav.removeClass("fixed-nav", 500);
+    $initNav.removeClass("smaller-nav");
+
+  }
+  if (scroll <= 100) {
+    $stickyNav.removeClass("fixed-nav", 500);
+    $initNav.removeClass("smaller-nav");
+
+  }
+});
+var $stickyheader = $("header");
+lastScroll = 0;
+$(window).on("scroll load", function () {
+  var scroll = $(window).scrollTop();
+  if (lastScroll - scroll > 0) {
+    $stickyheader.addClass("fixed-header", { duration: 1000 });
+  } else {
+    $stickyheader.removeClass("fixed-header", { duration: 500 });
+  }
+  lastScroll = scroll;
+  if (scroll == 0) {
+    $stickyheader.removeClass("fixed-header", { duration: 500 });
+  }
+});
+
 $(document).ready(function () {
   //phone size menu onclick
   $("#menu-id").click(function (e) {
@@ -254,4 +288,28 @@ $(document).ready(function () {
     const $select2 = $(".select_input");
     $select2.select2();
   }
+  //////////* fixed arrow to top*//////////
+  $(".arrow-top").click(function () {
+    $("html").css("scroll-behavior", "unset");
+
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000,
+      "swing"
+    );
+    setTimeout(() => {
+      $("html").css("scroll-behavior", "smooth");
+    }, 1000);
+  });
+  $(this).scrollTop() >= 500
+    ? $(".arrow-top").fadeIn(300)
+    : $(".arrow-top").fadeOut(300);
+
+  $(window).scroll(function () {
+    $(this).scrollTop() >= 500
+      ? $(".arrow-top").fadeIn(300)
+      : $(".arrow-top").fadeOut(300);
+  });
 });

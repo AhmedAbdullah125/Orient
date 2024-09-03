@@ -18,6 +18,7 @@
     overflow: hidden;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -35,7 +36,75 @@
     padding: 6px 20px;
     border-radius: 17px;
     color: #fff;
+    text-decoration: none;
 
+    .trip-price {
+        color: $white;
+    }
+}
+
+.trip-title {
+    display: none;
+
+}
+
+.offers-img-cont:hover .over {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 114, 85, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+
+}
+
+.offers-img-cont:hover .trip-title {
+    display: block;
+    color: $white;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.trip-title {
+    font-size: 22px;
+    font-weight: 400;
+    color: $white;
+    display: none;
+}
+
+.trip-price-in-a {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.offers-img-cont:hover .trip-price {
+    display: none;
+    color: $white;
+}
+
+@media (max-width: 767px) {
+    .offers-img-cont:hover .trip-title {
+        font-size: 14px;
+        font-weight: 400;
+        color: $white;
+    }
+
+    .offers-img-cont:hover .trip-title .trip-price-in-a {
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+    }
 }
 
 .offersSwiper {
@@ -193,7 +262,7 @@
     img {
         position: absolute;
         bottom: 0;
-        inset-inline-end: 15% ;
+        inset-inline-end: 15%;
         width: 187px;
         height: 19px;
     }
@@ -218,11 +287,13 @@
     border: 1px solid $white;
     font-size: 22px;
 }
-.fasel-double .over a:hover{
+
+.fasel-double .over a:hover {
     background-color: rgba($color: #fff, $alpha: .5);
     border: 1px solid $main;
     color: $main;
 }
+
 @media (max-width: 991px) {
     .fasel-double {
         grid-template-columns: 1fr;

@@ -98,3 +98,57 @@
         font-weight: 300;
     }
 }
+
+.contact-ancors {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $text;
+    @include tr;
+    text-decoration: none !important;
+
+    i {
+        font-size: 24px;
+        color: $main;
+    }
+
+    @include max-991 {
+        text-align: start;
+    }
+}
+
+a.contact-item :hover {
+    color: $main;
+}
+
+.social {
+    @include flexCenter;
+    gap: 16px;
+    
+}
+.social a {
+    @include flexCenter;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $main;
+    font-size: 15px;
+    color: $white;
+    text-decoration: none !important;
+    @include tr;
+
+    &:hover {
+        color: $white;
+        background-color: $hover;
+    }
+}
