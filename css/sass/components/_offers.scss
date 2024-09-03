@@ -314,6 +314,29 @@
     .fasel-double .over .over-cont p {
         font-size: 22px;
     }
+    .trip-price-in-a{
+        font-size: 16px;
+    }
+    .offers-img-cont .over {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(255, 114, 85, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    
+    }
+    .offers-img-cont .over .trip-title{
+        display: -webkit-box;
+        font-size: 15px;
+        text-align: center;
+    }
+    .offers-img-cont .over .trip-price{
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
@@ -326,3 +349,5 @@
         padding: 7px 10px;
     }
 }
+
+
