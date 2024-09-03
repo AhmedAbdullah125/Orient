@@ -49,12 +49,15 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(255, 114, 85, 0.45);
+    background-color: rgba(255, 114, 85, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0;
+}
 
+.offers-img-cont:hover .over {
+    background-color: rgba(255, 114, 85, 0);
 }
 
 .offers-img-cont .trip-title {
