@@ -43,12 +43,8 @@
     }
 }
 
-.trip-title {
-    display: none;
 
-}
-
-.offers-img-cont:hover .over {
+.offers-img-cont .over {
     top: 0;
     bottom: 0;
     right: 0;
@@ -61,7 +57,7 @@
 
 }
 
-.offers-img-cont:hover .trip-title {
+.offers-img-cont .trip-title {
     display: block;
     color: $white;
     font-size: 22px;
@@ -75,12 +71,6 @@
     -webkit-box-orient: vertical;
 }
 
-.trip-title {
-    font-size: 22px;
-    font-weight: 400;
-    color: $white;
-    display: none;
-}
 
 .trip-price-in-a {
     color: $white;
@@ -88,19 +78,14 @@
     font-weight: 600;
 }
 
-.offers-img-cont:hover .trip-price {
-    display: none;
-    color: $white;
-}
-
 @media (max-width: 767px) {
-    .offers-img-cont:hover .trip-title {
+    .offers-img-cont .trip-title {
         font-size: 14px;
         font-weight: 400;
         color: $white;
     }
 
-    .offers-img-cont:hover .trip-title .trip-price-in-a {
+    .offers-img-cont .trip-title .trip-price-in-a {
         color: $white;
         font-size: 16px;
         font-weight: 600;
